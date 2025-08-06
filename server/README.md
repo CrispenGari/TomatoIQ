@@ -43,16 +43,7 @@ pytest
 
 ### Getting teh Weather
 
-You can get your current weather by sending a get request to `http://127.0.0.1:8000/api/v1/weather/current` with the following json body:
-
-```json
-{
-  "lat": -32.78749,
-  "lon": 26.8344
-}
-```
-
-To get the following json response:
+You can get your current weather by sending a get request to `http://127.0.0.1:8000/api/v1/weather/current?lat=-32.78749&lon=26.8344`. To get the following json response:
 
 ```json
 {
