@@ -1,22 +1,21 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, Query
 from fastapi.responses import JSONResponse
 import requests
 import os
-from pydantic import BaseModel
+
 currentWeatherRouter = APIRouter(prefix="/api/v1/weather")
 
 
-class TCord(BaseModel):
-    lat: float
-    lon: float
-
 @currentWeatherRouter.get("/current")
-def weather_resolver(body: TCord):
+def weather_resolver(
+    lat: float = Query(description="Latitude"),
+    lon: float = Query(description="Longitude"),
+):
     try:
         api_key = os.getenv("WEATHER_STACK_API_KEY")
         res = requests.get(
-              f"https://api.weatherstack.com/current?access_key={api_key}&query={body.lat},{body.lon}"
-          ).json()
+            f"https://api.weatherstack.com/current?access_key={api_key}&query={lat},{lon}"
+        ).json()
         return JSONResponse({"success": True, "weather": res}, status_code=200)
     except Exception:
         return JSONResponse(
