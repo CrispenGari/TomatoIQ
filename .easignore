@@ -1,0 +1,46 @@
+# Native directories (not needed for managed workflow)
+
+android/
+ios/
+apk
+
+# others
+
+server/
+.github/
+README.md
+
+# Build artifacts
+
+build/
+dist/
+.out/
+.next/
+.web/
+web-build/
+.expo/
+.expo-shared/
+
+# Node modules (reinstalled during build)
+
+node_modules/
+
+# Version control
+
+.git/
+.gitignore
+
+# System/Editor settings
+
+.vscode/
+.idea/
+.DS_Store
+
+# Logs
+
+\*.log
+
+# Environment files (handled by EAS separately if needed)
+
+.env
+.env.\*
