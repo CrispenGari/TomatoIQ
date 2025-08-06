@@ -5,7 +5,10 @@ from contextlib import asynccontextmanager
 from torchvision import models
 import warnings
 from routers.predictTomatoQualityAndMaturity import predictTomatoQualityAndMaturityRouter
+from routers.currentWeather import currentWeatherRouter
+from dotenv import load_dotenv
 
+load_dotenv()
 warnings.filterwarnings("ignore")
 
 
@@ -37,6 +40,7 @@ app.add_middleware(
 )
 
 app.include_router(predictTomatoQualityAndMaturityRouter)
+app.include_router(currentWeatherRouter)
 
 
 @app.get("/")
