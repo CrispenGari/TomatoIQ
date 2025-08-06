@@ -2,6 +2,10 @@
 
 **Smart Tomato Quality and Maturity Detection App**
 
+<p align="center">
+    <img src="/images/icon.png" width="200" alt="Icon">
+</p>
+
 TomatoIQ is a mobile application that uses computer vision and machine learning to predict the quality and maturity level of tomatoes from images. Designed for farmers, supply chain managers, and agricultural researchers, the app helps streamline harvesting decisions, reduce waste, and ensure optimal crop value.
 
 > This repository contains two main sub directory which are:
@@ -31,7 +35,6 @@ TomatoIQ is a mobile application that uses computer vision and machine learning 
 - 📷 Real-time tomato image analysis using AI
 - 🍅 Maturity stage classification (e.g., green, breaker, pink, red)
 - ✅ Quality grading based on texture, color, and surface defects
-- 🌐 Offline support for field use
 - 📊 Visual insights and prediction confidence scores
 
 ---
@@ -41,6 +44,21 @@ TomatoIQ is a mobile application that uses computer vision and machine learning 
 - **PyTorch** – for model training and inference
 - **OpenCV** – for image preprocessing and enhancement
 - **React Native** – for cross-platform mobile support
+
+### Sample ScreenShots
+
+The following screenshots shows the basic UI of the mobile application.
+
+<p algn="center">
+  <img src="/images/0.jpeg" alt="UI" width="200"/>
+  <img src="/images/1.jpeg" alt="UI" width="200"/>
+  <img src="/images/2.jpeg" alt="UI" width="200"/>
+  <img src="/images/3.jpeg" alt="UI" width="200"/>
+  <img src="/images/4.jpeg" alt="UI" width="200"/>
+  <img src="/images/5.jpeg" alt="UI" width="200"/>
+  <img src="/images/6.jpeg" alt="UI" width="200"/>
+  <img src="/images/7.jpeg" alt="UI" width="200"/>
+</p>
 
 ---
 
@@ -82,6 +100,10 @@ The following is the API expected response.
 ### 📂 Dataset
 
 The dataset that was used to train the models for tomato quality assessment and maturity was found on (Kaggle](https://www.kaggle.com/datasets/sujaykapadnis/tomato-maturity-detection-and-quality-grading).
+
+### Notebooks
+
+The notebooks for training the models and saving static files can be found [here: `10_TOMATO_QUALITY_MATURITY`](https://github.com/CrispenGari/cv-torch/blob/main/10_TOMATO_QUALITY_MATURITY/01_mobilenetv3.ipynb).
 
 ### LICENSE
 
