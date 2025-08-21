@@ -58,8 +58,8 @@ const Page = () => {
             </Text>
           </Card>
         ) : (
-          history.map((history) => (
-            <HistoryItem key={history.id} item={history} />
+          history.map((history, index) => (
+            <HistoryItem key={index} item={history} />
           ))
         )}
       </ScrollView>

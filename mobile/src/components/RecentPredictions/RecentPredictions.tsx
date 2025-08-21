@@ -61,8 +61,8 @@ const RecentPredictions = () => {
         </View>
       ) : (
         <View>
-          {history.slice(0, 2).map((item) => (
-            <HistoryItemHome key={item.id} item={item} />
+          {history.slice(0, 2).map((item, index) => (
+            <HistoryItemHome key={index} item={item} />
           ))}
         </View>
       )}

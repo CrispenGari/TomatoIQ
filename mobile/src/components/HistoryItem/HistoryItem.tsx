@@ -185,10 +185,10 @@ const HistoryItem = ({ item }: { item: THistory }) => {
                   marginTop: 5,
                 }}
               >
-                {plotsData.maturity.map((data) => (
+                {plotsData.maturity.map((data, index) => (
                   <LegendItem
                     label={data.maturity}
-                    key={data.label}
+                    key={index}
                     color={data.color}
                     dotStyle={{ width: 10, height: 10, borderRadius: 10 }}
                   />
@@ -230,10 +230,10 @@ const HistoryItem = ({ item }: { item: THistory }) => {
                   marginTop: 5,
                 }}
               >
-                {plotsData.quality.map((data) => (
+                {plotsData.quality.map((data, index) => (
                   <LegendItem
                     label={data.quality}
-                    key={data.label}
+                    key={index}
                     color={data.color}
                     dotStyle={{ width: 10, height: 10, borderRadius: 10 }}
                   />

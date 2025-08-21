@@ -238,10 +238,10 @@ const Page = () => {
             <View style={{ flexDirection: "row", gap: 10, flexWrap: "wrap" }}>
               {plotsData.quality
                 .filter((i) => i.quality !== "")
-                .map((data) => (
+                .map((data, index) => (
                   <LegendItem
                     label={data.quality}
-                    key={data.quality}
+                    key={index}
                     color={data.frontColor}
                   />
                 ))}
@@ -334,10 +334,10 @@ const Page = () => {
             <View style={{ flexDirection: "row", gap: 10, flexWrap: "wrap" }}>
               {plotsData.maturity
                 .filter((i) => i.maturity !== "")
-                .map((data) => (
+                .map((data, index) => (
                   <LegendItem
                     label={data.maturity}
-                    key={data.maturity}
+                    key={index}
                     color={data.frontColor}
                   />
                 ))}
