@@ -1,7 +1,6 @@
 import { TPredictionResponse, TWeatherData } from "@/src/types";
 import { ReactNativeFile } from "apollo-upload-client";
-
-const __serverURL__ = "https://tomatoiq.onrender.com"; //process.env.EXPO_PUBLIC_SERVER_URL!;
+import { SERVER_BASE_URL } from "../constants";
 
 export const predictTomatoQualityAndMaturity = async ({
   tomato,
@@ -10,7 +9,7 @@ export const predictTomatoQualityAndMaturity = async ({
 }) => {
   const formData = new FormData();
   formData.append("tomato", tomato);
-  const res = await fetch(`${__serverURL__}/api/v1/tomato/predict`, {
+  const res = await fetch(`${SERVER_BASE_URL}/api/v1/tomato/predict`, {
     method: "POST",
     body: formData,
   });
@@ -25,7 +24,7 @@ export const getCurrentWeather = async ({
 }) => {
   const [_, lat, lon] = queryKey;
   const res = await fetch(
-    `${__serverURL__}/api/v1/weather/current?lat=${lat}&lon=${lon}`,
+    `${SERVER_BASE_URL}/api/v1/weather/current?lat=${lat}&lon=${lon}`,
     {
       method: "GET",
       headers: { "Content-Type": "application/json" },

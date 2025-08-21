@@ -1,4 +1,4 @@
-export const SERVER_BASE_URL = "http://10.20.62.129:3001";
+export const SERVER_BASE_URL = "https://tomatoiq.onrender.com";
 
 export const COLORS = {
   main: "#DBFFCB",

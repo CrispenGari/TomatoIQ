@@ -5,8 +5,8 @@
   "scripts": {
     "start": "expo start",
     "reset-project": "node ./scripts/reset-project.js",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
     "web": "expo start --web",
     "lint": "expo lint"
   },
@@ -25,7 +25,6 @@
     "expo-blur": "~14.1.5",
     "expo-camera": "^16.1.11",
     "expo-constants": "~17.1.7",
-    "expo-crypto": "~14.1.5",
     "expo-device": "^7.1.4",
     "expo-font": "~13.3.2",
     "expo-haptics": "~14.1.4",
@@ -57,20 +56,15 @@
     "react-native-screens": "~4.11.1",
     "react-native-svg": "15.11.2",
     "react-native-swiper": "^1.6.0",
-    "react-native-typewriter": "^0.7.0",
     "react-native-uuid": "^2.0.3",
     "react-native-web": "~0.20.0",
     "react-native-webview": "13.13.5",
-    "reanimated-color-picker": "^4.1.0",
-    "tinycolor2": "^1.6.0",
     "zustand": "^5.0.6"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
     "@types/apollo-upload-client": "^17.0.2",
     "@types/react": "~19.0.10",
-    "@types/react-native-typewriter": "^0.7.4",
-    "@types/tinycolor2": "^1.4.6",
     "eslint": "^9.25.0",
     "eslint-config-expo": "~9.2.0",
     "typescript": "~5.8.3"
@@ -80,9 +74,6 @@
     "doctor": {
       "reactNativeDirectoryCheck": {
         "exclude": [
-          "react-native-typewriter",
-          "react-native-loading-spinner-overlay",
-          "react-native-maps-directions",
           "react-native-swiper"
         ],
         "listUnknownPackages": false

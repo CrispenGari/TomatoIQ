@@ -3,7 +3,7 @@
 **Smart Tomato Quality and Maturity Detection App**
 
 <p align="center">
-    <img src="/images/icon.png" width="200" alt="Icon">
+    <img src="/screenshots/icon.png" width="200" alt="Icon">
 </p>
 
 TomatoIQ is a mobile application that uses computer vision and machine learning to predict the quality and maturity level of tomatoes from images. Designed for farmers, supply chain managers, and agricultural researchers, the app helps streamline harvesting decisions, reduce waste, and ensure optimal crop value.
@@ -42,7 +42,7 @@ TomatoIQ is a mobile application that uses computer vision and machine learning 
 ### 🧠 Powered By
 
 - **PyTorch** – for model training and inference
-- **OpenCV** – for image preprocessing and enhancement
+- **PIL & TorchVision** – for image preprocessing and enhancement
 - **React Native** – for cross-platform mobile support
 
 ### Sample ScreenShots
@@ -50,14 +50,14 @@ TomatoIQ is a mobile application that uses computer vision and machine learning 
 The following screenshots shows the basic UI of the mobile application.
 
 <p algn="center">
-  <img src="/images/0.jpeg" alt="UI" width="200"/>
-  <img src="/images/1.jpeg" alt="UI" width="200"/>
-  <img src="/images/2.jpeg" alt="UI" width="200"/>
-  <img src="/images/3.jpeg" alt="UI" width="200"/>
-  <img src="/images/4.jpeg" alt="UI" width="200"/>
-  <img src="/images/5.jpeg" alt="UI" width="200"/>
-  <img src="/images/6.jpeg" alt="UI" width="200"/>
-  <img src="/images/7.jpeg" alt="UI" width="200"/>
+  <img src="/screenshots/0.jpeg" alt="UI" width="200"/>
+  <img src="/screenshots/1.jpeg" alt="UI" width="200"/>
+  <img src="/screenshots/2.jpeg" alt="UI" width="200"/>
+  <img src="/screenshots/3.jpeg" alt="UI" width="200"/>
+  <img src="/screenshots/4.jpeg" alt="UI" width="200"/>
+  <img src="/screenshots/5.jpeg" alt="UI" width="200"/>
+  <img src="/screenshots/6.jpeg" alt="UI" width="200"/>
+  <img src="/screenshots/7.jpeg" alt="UI" width="200"/>
 </p>
 
 ---

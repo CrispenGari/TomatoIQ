@@ -97,7 +97,7 @@ const RootLayout = () => {
             const tip = getRandomItem(tips);
             await scheduleDailyNotification({
               body: tip.text,
-              title: `🌱 Did you know?`,
+              title: `🍅 Did you know?`,
             });
             update(tip);
             await AsyncStorage.setItem(
