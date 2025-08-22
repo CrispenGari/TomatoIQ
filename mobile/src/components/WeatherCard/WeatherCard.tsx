@@ -1,8 +1,6 @@
-import { View, Text } from "react-native";
-import React from "react";
-import Card from "../Card/Card";
-import { useCurrentLocation } from "@/src/hooks";
 import { COLORS, FONTS } from "@/src/constants";
+import { useCurrentLocation } from "@/src/hooks/useCurrentLocation";
+import { getCurrentWeather } from "@/src/utils/react-query";
 import {
   Entypo,
   FontAwesome,
@@ -10,10 +8,12 @@ import {
   MaterialCommunityIcons,
   MaterialIcons,
 } from "@expo/vector-icons";
-import Animated, { ZoomInUp } from "react-native-reanimated";
-import WeatherCardSkeleton from "./WeatherCardSkeleton";
 import { useQuery } from "@tanstack/react-query";
-import { getCurrentWeather } from "@/src/utils/react-query";
+import React from "react";
+import { Text, View } from "react-native";
+import Animated, { ZoomInUp } from "react-native-reanimated";
+import Card from "../Card/Card";
+import WeatherCardSkeleton from "./WeatherCardSkeleton";
 
 const WeatherCard = () => {
   const loc = useCurrentLocation();

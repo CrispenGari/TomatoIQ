@@ -1,7 +1,7 @@
+import { TLocation } from "@/src/types";
 import * as Location from "expo-location";
 import React from "react";
-import { useLocationPermission } from "../";
-import { TLocation } from "@/src/types";
+import { useLocationPermission } from "../useLocationPermission";
 
 export const useCurrentLocation = () => {
   const { granted } = useLocationPermission();
