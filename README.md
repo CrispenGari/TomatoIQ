@@ -10,8 +10,8 @@ TomatoIQ is a mobile application that uses computer vision and machine learning 
 
 > This repository contains two main sub directory which are:
 
-1. `mobile` - The mobile app that does predictions by sending requests to the API server using `X-Ray` images of a human chest.
-2. `server` - This is an API server that serves different models that does TB predictions on chest-x-ray images of a human.
+1. `mobile` - The mobile app that does predictions by sending requests to the API server using `tomato` images.
+2. `server` - This is an API server that serves a model for tomato quality prediction.
 
 <p align="center">
   <a href="https://github.com/crispengari/tomatoIQ/actions/workflows/ci.yml">
